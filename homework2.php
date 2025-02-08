@@ -1,1 +1,16 @@
-# This is your HTML/PHP file. Delete this comment, and then get started according to the instructions!
+<?php
+$d = new DateTime();
+print 'It is now: ';
+print $d->format('r');
+print "\n";
+?>
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+</head>
+<body>
+
+</body>
+</html>
+
