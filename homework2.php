@@ -1,8 +1,14 @@
 <?php
 $d = new DateTime();
-print 'It is now: ';
-print $d->format('r');
-print "\n";
+$hour = $d->format('H');
+
+if($hour < 12){
+    $greeting = "Good Morning!";
+} elseif($hour < 18){
+    $greeting = "Good Afternoon.";
+} else{
+    $greeting = "Goodnight.";
+}
 ?>
 <!doctype html>
 <html lang="en-US">
@@ -10,7 +16,7 @@ print "\n";
 <meta charset="utf-8" />
 </head>
 <body>
-
+<?php echo $greeting; ?>
 </body>
 </html>
 
